@@ -1,0 +1,52 @@
+import re
+
+def password_strength(password):
+    length_score = 0
+    complexity_score = 0
+    uniqueness_score = 0
+
+    # Criteria 1: Length
+    if len(password) >= 8:
+        length_score = min(len(password), 12)  # Longer passwords get higher scores
+    
+    # Criteria 2: Complexity
+    if re.search(r"[A-Z]", password):
+        complexity_score += 1
+    if re.search(r"[a-z]", password):
+        complexity_score += 1
+    if re.search(r"\d", password):
+        complexity_score += 1
+    if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
+        complexity_score += 1
+
+    # Criteria 3: Uniqueness (this is a simple example; real-world apps should use a more comprehensive approach)
+    common_passwords = ['password', '123456', 'qwerty', 'abc123']
+    if password.lower() not in common_passwords:
+        uniqueness_score = 2
+    else:
+        uniqueness_score = -2  # Penalize common passwords
+
+    # Calculate total score
+    total_score = length_score + complexity_score + uniqueness_score
+
+    # Provide feedback
+    if total_score >= 10:
+        strength = 'Strong'
+    elif total_score >= 6:
+        strength = 'Medium'
+    else:
+        strength = 'Weak'
+
+    return {
+        'strength': strength,
+        'score': total_score,
+        'length_score': length_score,
+        'complexity_score': complexity_score,
+        'uniqueness_score': uniqueness_score
+    }
+
+# Example usage
+password = "abc123"
+result = password_strength(password)
+print(f"Password Strength: {result['strength']}")
+print(f"Score Breakdown: {result}")
