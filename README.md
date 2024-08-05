@@ -62,3 +62,7 @@ Web Applications: Integrate the tool into user registration or password reset fo
 Educational Purposes: Teach users about password security by demonstrating how different factors affect password strength.
 Security Audits: Assess the strength of passwords in existing systems and provide recommendations for improvement.
 This tool helps in enhancing the security of user accounts by promoting the use of stronger, more complex, and unique passwords.
+
+Output:
+![Screenshot 2024-08-05 230252](https://github.com/user-attachments/assets/0607a466-faf4-433f-b0c2-c3ea4b2035f6)
+
