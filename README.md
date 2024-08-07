@@ -51,11 +51,11 @@ Implement an entropy-based approach for a more accurate and mathematically groun
 
 ### Use Cases:
 
-**Web Applications**: Integrate the tool into user registration or password reset forms to encourage stronger password practices.
-**Educational Purposes**: Teach users about password security by demonstrating how different factors affect password strength.
-**Security Audits**: Assess the strength of passwords in existing systems and provide recommendations for improvement.
+**Web Applications**: Integrate the tool into user registration or password reset forms to encourage stronger password practices.<br>
+**Educational Purposes**: Teach users about password security by demonstrating how different factors affect password strength.<br>
+**Security Audits**: Assess the strength of passwords in existing systems and provide recommendations for improvement.<br>
 This tool helps in enhancing the security of user accounts by promoting the use of stronger, more complex, and unique passwords.
 
-Output:
+## Output:
 ![Screenshot 2024-08-05 230252](https://github.com/user-attachments/assets/0607a466-faf4-433f-b0c2-c3ea4b2035f6)
 
